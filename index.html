@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html manifest="cache.manifest">
+  <head>
+    <title>SaveMyGeo</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Giovanny Andrés Góngora Granada - @Gioyik">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="SaveMyGeo guarda tus lugares facilmente!" />
+    <link rel="stylesheet" href="css/jquery.mobile.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.structure.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+    <link rel="stylesheet" href="css/jquery.toastmessage.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile.js"></script>
+    <script src="js/jquery.toastmessage.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+<body> 
+
+<div data-role="page" id="home" data-theme="c">
+
+  <div data-role="header" data-theme="c">
+    <h1>SaveMyGeo</h1>
+  </div>
+  <div data-role="header" data-theme="b">
+    <h1><img src="css/images/home.png" alt="SaveMyGeo"></h1>
+  </div>
+  <div data-role="content">
+    <h3 class="c">Save your location now!</h3>
+    <a id="savePosition" href="#save" data-role="button" data-transition="slide" data-icon="check" data-theme="b">Get and Save your location</a>
+    <a id="seePosition" href="#see" data-role="button" data-transition="flip" data-icon="search" data-theme="b">Load a Saved location</a>
+    <br /><br /><br /><br /><br />
+    <a href="#info" data-role="button" data-transition="slideup" data-icon="info">Help</a>
+    <a href="#about" data-role="button" data-transition="slideup" data-icon="info">About</a>
+  </div>
+</div>
+
+<div id="save" data-role="page" data-theme="c">
+  <div data-role="header" data-theme="c">
+    <h1>SaveMyGeo</h1>
+    <a href="#home" data-icon="home" data-iconpos="notext" data-rel="back" data-direction="reverse">Home</a>
+    <a id="savePos" data-role="button" data-theme="b">Save</a>
+  </div>
+
+  <div id="saveContent" data-role="content"> 
+    <div>
+    </div>
+    <div id="map_canvas"></div>
+  </div>
+</div>
+
+
+<div id="see" data-role="page" data-theme="c">
+  <div data-role="header" data-theme="c">
+    <h1>SaveMyGeo</h1>
+    <a href="index.html" data-icon="home" data-iconpos="notext" data-rel="back">Home</a>
+    <a id="toggleSV" data-role="button" data-theme="b">Watch Streets</a>
+  </div>
+
+  <div id="seeContent" data-role="content">
+    <div id="map_canvas2"></div>
+  </div>
+</div>
+
+
+<div id="info" data-role="page" data-theme="c">
+  <div data-role="header" data-theme="c">
+    <h1>Ayuda de SaveMyGeo</h1>
+    <a href="#home" data-icon="home" data-iconpos="notext" data-rel="back" data-direction="reverse">Home</a>
+  </div>
+  <div data-role="header" data-theme="b">
+    <h1><img src="css/images/help.png" alt="SaveMyGeo"></h1>
+  </div>
+  <div data-role="content"> 
+    <p>SaveMyGeo is a small application that uses the geolocation as a key driver to interact. It has just 2 functions are handled to perfection that are:</p>
+    <p><strong>- Localizate and save your location:</strong> This function does is capture your current location on the map provided by Google Maps and save to locally on your device or computer.</p>
+    <p><strong>- Load a saved location:</strong> This function is intended load a location that you find previously saved, so that you can see Map denuevo in more detail or activating the option "Watch streets."</p>
+    <p>Enjoy using the application! :D</p>
+  </div>
+</div>
+
+
+<div id="about" data-role="page" data-theme="c">
+  <div data-role="header" data-theme="c">
+    <h1>Acerca de SaveMyGeo</h1>
+    <a href="#home" data-icon="home" data-iconpos="notext" data-rel="back" data-direction="reverse">Home</a>
+  </div>
+  <div data-role="header" data-theme="b">
+    <h1><img src="css/images/info.png" alt="SaveMyGeo"></h1>
+  </div>
+  <div data-role="content"> 
+<p align="justify"><a href="https://github.com/Gioyik/FavMyGeoPlaces">FavMyGeoPlaces</a> created by <a href="https://twitter.com/Gioyik">Giovanny Andrés Góngora Granada (Gioyik)</a>, this application is licensed under the <a href="http://www.opensource.org/licenses/gpl-3.0.html">GNU General Public License, version 3 (GPLv3)</a>. You can use the application free and without any restriction. If you want contribuite to the application feel free to visit our repository on GitHub.</p>
+  </div>
+</div>
+
+</body>
+</html>
