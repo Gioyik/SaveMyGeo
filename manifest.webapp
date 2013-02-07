@@ -1,14 +1,18 @@
 {
-  "version": "1.0",
   "name": "SaveMyGeo",
-  "description": "Save your currents positions easy in you phone!",
-  "launch_path": "/",
+  "description": "Guardas las posiciones en las que has estado desde tu movil!",
+  "launch_path": "/index.html",
   "icons": {
     "128": "/css/images/home.png"
   },
   "developer": {
     "name": "Giovanny Andres Gongora Granada",
-    "url": "http://gioyik.wordpress.com"
+    "url": "gioyik.wordpress.com"
   },
-  "default_locale": "en"
+  "default_locale": "en",
+  "permissions": {
+    "geolocation": {
+      "description": "Necesita ubicarte"
+    }
+  }
 }
