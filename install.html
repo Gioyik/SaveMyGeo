@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo</title>
+	</head>
+<body>
+<form id="install">
+	<button style="height:100px; width:100px; font-size:34px;">Install</button>
+	
+</form>
+
+<script>
+
+function install(){
+	navigator.mozApps.install("http://localhost/fxDemo/manifest.webapp");
+	return false;
+}
+document.getElementById("install").onsubmit = install;
+
+</script>
+
+</body>
+</html>
