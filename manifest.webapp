@@ -24,7 +24,7 @@
   },
   "default_locale": "en-US",
   "icons": {
-    "128": "/img/icons/128.png"
+    "128": "SaveMyGeo/img/icons/128.png"
   },
   "permissions": {
     "geolocation": {
