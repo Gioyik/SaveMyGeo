@@ -1,13 +1,35 @@
 {
   "name": "SaveMyGeo",
-  "description": "Guardas las posiciones en las que has estado desde tu movil!",
-  "launch_path": "/",
+  "description": "Save your positions easy",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Giovanny Andres Gongora Granada",
+    "url": "https://github.com/Gioyik"
+  },
+  "locales": {
+    "en-US": {
+      "name": "SaveMyGeo",
+  "description": "Save your positions easy",
+      "developer": {
+        "url": "https://github.com/Gioyik/SaveMyGeo"
+      }
+    },
+    "es": {
+      "name": "SaveMyGeo",
+      "description": "Guarda tus posiciones facilmente",
+      "developer": {
+        "url": "https://github.com/Gioyik/SaveMyGeo"
+      }
+    }
+  },
+  "default_locale": "en-US",
   "icons": {
     "128": "/css/images/home.png"
   },
-  "developer": {
-    "name": "Giovanny Andres Gongora Granada",
-    "url": "http://gioyik.wordpress.com"
-  },
-  "default_locale": "en"
+  "permissions": {
+    "geolocation": {
+      "description": "geolocation"
+    }
+  }
+
 }
