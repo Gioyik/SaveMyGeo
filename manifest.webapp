@@ -1,7 +1,7 @@
 {
   "name": "SaveMyGeo",
   "description": "Save your positions easy",
-  "launch_path": "/index.html",
+  "launch_path": "SaveMyGeo/index.html",
   "developer": {
     "name": "Giovanny Andres Gongora Granada",
     "url": "https://github.com/Gioyik"
