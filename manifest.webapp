@@ -1,7 +1,7 @@
 {
   "name": "SaveMyGeo",
   "description": "Save your positions easy",
-  "launch_path": "https://gioyik.github.com/SaveMyGeo/index.html",
+  "launch_path": "/index.html",
   "developer": {
     "name": "Giovanny Andres Gongora Granada",
     "url": "https://github.com/Gioyik"
@@ -24,7 +24,7 @@
   },
   "default_locale": "en-US",
   "icons": {
-    "128": "SaveMyGeo/img/icons/128.png"
+    "128": "img/icons/128.png"
   },
   "permissions": {
     "geolocation": {
